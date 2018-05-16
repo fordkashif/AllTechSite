@@ -66,7 +66,7 @@
 	------------------------------------------------------ */
 
 	/* local validation */
-	$('#contactForm').validate({
+	$('#contact-form').validate({
 
 		/* submit via ajax */
 		submitHandler: function(form) {
