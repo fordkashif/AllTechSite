@@ -143,45 +143,29 @@
 							<li class="breadcrumb-item"><span>Complete the form below & we will get in touch within one business day</span></a></li>
 						</ul>
 
-						<!-- form -->
-					            <form name="contactForm" id="contactForm" method="post" action="">
-					      			<fieldset>
-
-					                  <div class="form-field">
-					 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-					                  </div>
-					                  <div class="form-field">
-						      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-						               </div>
-					                  <div class="form-field">
-						     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-						               </div>                       
-					                  <div class="form-field">
-						                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-						               </div>                      
-					                 <div class="form-field">
-					                     <button class="submitForm button button-primary large">Submit</button>
-
-					                     <div id="submit-loader">
-					                        <div class="text-loader">Sending...</div>                             
-					       				      <div class="s-loader">
-													  	<div class="bounce1"></div>
-													  	<div class="bounce2"></div>
-													  	<div class="bounce3"></div>
-													</div>
-												</div><!-- submit-loader -->
-					                  </div>
-
-					      			</fieldset>
-					      		</form> <!-- /form -->
-
-					            <!-- contact-warning -->
-					            <div id="message-warning">            	
-					            </div>            
-					            <!-- contact-success -->
-					      		<div id="message-success">
-					               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-					      		</div>
+						<form class="col-centered" id="contact-form" action="inc/sendEmail.php" method="post">
+							<!-- <input class="input" type="text" name="fname" id="fname" placeholder="First Name*" required> -->
+							<input class="input" type="text" name="name" id="name" placeholder="Full Name*" required>
+							<input class="input" type="email" name="email" id="email" placeholder="Email Address*" required>
+							<input class="input" type="text" name="subject" id="subject" placeholder="Subject*" required>
+							<textarea id="message" name="message" placeholder="Message*" rows="10" cols="50" required></textarea>
+							<input id="submitbutton" type="submit" value="Submit">
+							<!-- Submit Loader-->
+							<div id="submit-loader">
+		                        <div class="text-loader">Sending...</div>                             
+		       				      	<div class="s-loader">
+									  	<div class="bounce1"></div>
+									  	<div class="bounce2"></div>
+									  	<div class="bounce3"></div>
+									</div>
+							</div><!-- submit-loader -->
+						</form>
+						<!-- contact-warning -->
+					    <div id="message-warning"></div>            
+			            <!-- contact-success -->
+			      		<div id="message-success">
+			               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+			      		</div>
 					</div>
 				</div>
 			</div>
