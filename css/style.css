@@ -927,7 +927,7 @@ textarea {
     margin: 0 auto;
     float: none;
 }
-#contact-form input{
+#contactForm input{
 	border: 1px solid #000;
 	margin: 5px;
 	max-width: 600px;
@@ -935,23 +935,23 @@ textarea {
 	height: 40px;
 }
 
-#contact-form input:focus{
+#contactForm input:focus{
 	outline: none;
 }
-#contact-form textarea{
+#contactForm textarea{
 	border: 1px solid #000;
 	margin: 5px;
 	max-width: 600px;
 	width:80%;
 }
-#contact-form #submitbutton{
+#contactForm #submitbutton{
 	padding: 0px 20px;
     background: #fdc014;
     border: none;
     color: #004;
     font-size: 14px;
 }
-#contact-form ::placeholder{
+#contactForm ::placeholder{
 	color:black;
 }
 .service {
